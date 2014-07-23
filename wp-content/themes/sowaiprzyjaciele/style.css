@@ -1,0 +1,230 @@
+/*
+Theme Name: Sowa & Przyjaciele
+*/
+html {
+    margin-top: 0;
+    background-color: #FDF7F0;
+    position: relative;
+    min-height: 100%;
+}
+body {
+    color: #5a534c;
+}
+
+#header-container {
+    padding-top: 32px;
+    background-size: cover;
+    background-image: url('img/top-bg.png');
+    background-position: right;
+}
+
+#header-backdrop {
+    height: 9px;
+    background-image: url('img/top-backdrop-bg.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+#lang-switcher {
+    padding-left: 0;
+    text-align: right;
+}
+#lang-switcher li {
+    display: inline-block;
+}
+#lang-switcher.visible-xs-block {
+    margin: 15px 0;
+}
+#lang-switcher.visible-xs-block li {
+    margin: 0;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+/* Klasa usuwana JavaScriptem, jeśli jest obsługiwany */
+.navbar ul.sub-menu {
+    display: none;
+}
+#menu-main {
+    background-color: #7E1012;
+    background-image: url('img/menu-bg.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    border: none;
+    border-radius: 6px;
+}
+@media not screen and (min-width: 768px) {
+    #menu-main {
+        background-image: none;
+    }
+}
+#menu-main ul li > .dropdown-menu {
+    background-color: #7E1012;
+    border: none;
+}
+#menu-main ul li a {
+    color: white;
+}
+#menu-main ul li.dropdown.open > a {
+    background-color: #AD383C;
+}
+#menu-main ul li a:hover,
+#menu-main ul li a:focus {
+    background-color: #AD383C;
+}
+#menu-main .navbar-header {
+    background-image: url('img/menu-bg.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    border-radius: 6px;
+}
+#menu-main .navbar-toggle {
+    border-color: #AD383C;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#menu-main .navbar-toggle:hover,
+#menu-main .navbar-toggle:focus {
+    background-color: #AD383C;
+}
+#menu-main .navbar-toggle .icon-bar {
+    background-color: white;
+}
+#menu-main .navbar-collapse {
+    border-color: #AD383C;
+}
+
+
+#widgets-top-wrapper {
+    background-image: url('img/widgets-top-bg.png');
+    background-repeat: repeat-x;
+    min-height: 50px;
+    background-size: auto 100%;
+}
+
+#widgets-top {
+    margin-bottom: 9px;
+}
+
+#content-wrapper {
+    background-image: url('img/content-bg.png');
+    background-repeat: repeat-x;
+}
+
+#content-wrapper .content {
+    background-color: white;
+    border: 1px solid #F3ECE4;
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+#content-wrapper .content h2 {
+    font-size: 18px;
+    color: #544a3f;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dad7d3;
+    margin-bottom: 10px;
+}
+
+#content-wrapper .content-with-submenu h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #781a1a;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    background-image: url('img/header-underline.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#content-wrapper h3 {
+}
+
+#content-wrapper .content-menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-menu .content-menu-top {
+    height: 11px;
+    background-image: url('img/content-menu-top.png');
+    background-size: 100% 100%;
+}
+.content-menu .content-menu-bottom {
+    height: 11px;
+    background-image: url('img/content-menu-bottom.png');
+    background-size: 100% 100%;
+}
+.content-menu ul {
+    background-image: url('img/content-menu-bg.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.content-menu li.active,
+.content-menu li:hover {
+    background-image: url('img/content-menu-hover.png');
+    background-size: 100% 100%;
+}
+.content-menu li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0 10px;
+    margin: 0 10px 0;
+    display: block;
+    background-image: url('img/content-menu-divider.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+.content-menu li:last-child a {
+    background-image: none;
+}
+
+
+#footer-wrapper {
+    background-image: url('img/footer-bg.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    border-top: 1px solid #CDC6BF;
+    color: #5A4A3C;
+    padding: 10px 0;
+}
+
+#footer-wrapper p {
+    margin: 0;
+    float: left;
+}
+
+#footer-wrapper img {
+    margin: 0;
+    float: right;
+    height: 3.5em;
+}
+
+body {
+    background-color: #FDF7F0;
+    /* Zmieniane przez JavaScript, jeśli obsługiwany */
+    margin-bottom: 100px;
+}
+
+/* Klasa przypisywana JavaScriptem, jeśli jest obsługiwany; wysokość kopiowana do marginu body */
+.footer-wrapper-sticky {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*
+Zmienione parametry kompilacji Bootstrapa:
+@navbar-height: 33px
+@container-large-desktop: ((960px + @grid-gutter-width))
+*/
